@@ -1,0 +1,56 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Torna o container de login ocupar toda a altura da tela */
+  background-color: #f0f0f0; /* Cor de fundo */
+}
+
+/* Estilos para o formulário de login */
+.login-form {
+  max-width: 300px; /* Largura máxima do formulário */
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para o título do formulário */
+.login-title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Estilos para os campos de entrada (inputs) */
+.login-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box; /* Garante que o padding não aumente o tamanho total do elemento */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Estilos para o botão de login */
+.login-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Transição suave de cor de fundo */
+}
+
+.login-button:hover {
+  background-color: #0056b3; /* Cor de fundo ao passar o mouse */
+}
+
+/* Estilos para mensagens de erro */
+.login-error {
+  color: red;
+  margin-top: 10px;
+  text-align: center;
+}

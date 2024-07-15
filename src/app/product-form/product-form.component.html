@@ -1,0 +1,41 @@
+<div class="add-product-container">
+  <h1>{{ isEditMode ? "Edit" : "Add" }} Product</h1>
+
+  <form
+    class="add-product-form"
+    [formGroup]="productForm"
+    (ngSubmit)="saveProduct()"
+  >
+    <input
+      type="text"
+      class="add-product-input"
+      placeholder="Nome do Produto"
+      id="name"
+    />
+    <input
+      type="text"
+      class="add-product-input"
+      placeholder="Descrição"
+      id="description"
+    />
+    <input
+      type="number"
+      class="add-product-input"
+      placeholder="Preço"
+      id="price"
+    />
+
+    <!-- Exemplo de seleção de categoria -->
+    <select class="add-product-input" id="categoryPath">
+      <option value="">Selecione a Categoria</option>
+      <option value="eletronicos">Eletrônicos</option>
+      <option value="vestuario">Vestuário</option>
+      <option value="alimentos">Alimentos</option>
+      <!-- Adicione outras opções conforme necessário -->
+    </select>
+
+    <button type="submit" class="add-product-button">
+      {{ isEditMode ? "Update" : "Add" }} Product
+    </button>
+  </form>
+</div>
